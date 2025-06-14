@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cloud Migration Services | Ubik 360 Enterprises</title>
+<meta name="description" content="Expert cloud migration services for businesses in Ontario. Seamlessly transition to the cloud with minimal disruption and maximum security with Ubik 360.">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#F6EC2F',secondary:'#625E12'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+@font-face {
+font-family: 'Compose Monotype';
+src: url('https://fonts.cdnfonts.com/css/compose-monotype') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+.font-compose {
+font-family: 'Compose Monotype', monospace;
+}
+body {
+font-family: 'Barlow', sans-serif;
+}
+.dropdown {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+z-index: 50;
+}
+.dropdown-trigger:hover .dropdown {
+display: block;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.service-card:hover {
+background-color: rgba(246, 236, 47, 0.1);
+transform: translateY(-5px);
+}
+.faq-item.active .faq-answer {
+max-height: 1000px;
+opacity: 1;
+padding-top: 1rem;
+padding-bottom: 1rem;
+}
+.faq-item.active .faq-toggle i {
+transform: rotate(180deg);
+}
+.faq-answer {
+max-height: 0;
+opacity: 0;
+overflow: hidden;
+transition: all 0.3s ease;
+}
+.step-item:not(:last-child)::after {
+content: '';
+position: absolute;
+top: 2.5rem;
+left: 2.5rem;
+height: calc(100% - 2.5rem);
+width: 2px;
+background-color: #F6EC2F;
+z-index: 0;
+}
+.case-study-card:hover {
+transform: translateY(-5px);
+}
+.pricing-card:hover {
+transform: translateY(-10px);
+}
+.custom-checkbox {
+position: relative;
+padding-left: 30px;
+cursor: pointer;
+user-select: none;
+}
+.custom-checkbox input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 20px;
+width: 20px;
+background-color: #fff;
+border: 2px solid #ddd;
+border-radius: 4px;
+}
+.custom-checkbox:hover input ~ .checkmark {
+border-color: #ccc;
+}
+.custom-checkbox input:checked ~ .checkmark {
+background-color: #F6EC2F;
+border-color: #F6EC2F;
+}
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+.custom-checkbox input:checked ~ .checkmark:after {
+display: block;
+}
+.custom-checkbox .checkmark:after {
+left: 6px;
+top: 2px;
+width: 5px;
+height: 10px;
+border: solid #625E12;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+<div class="container mx-auto px-6 py-4 flex items-center justify-between">
+<div class="flex items-center">
+<a href="#" class="h-8">
+<img src="https://static.readdy.ai/image/f26820c46156987b718323285b022977/820a1203f3dafdd6a238d30d37806e0b.png" alt="Ubik360" class="h-full">
+</a>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="#" class="text-gray-800 hover:text-secondary font-medium">Home</a>
+<div class="dropdown-trigger relative">
+<a href="#" class="text-gray-800 hover:text-secondary font-medium flex items-center">
+Services
+<div class="w-4 h-4 flex items-center justify-center ml-1">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</a>
+<div class="dropdown bg-white shadow-lg rounded w-64 py-2">
+<a href="https://readdy.ai/home/f3d1d9c3-3956-47bb-ab57-5d1d21ec1f08/f0ac15cb-c832-426e-82c1-351b35ac03f9" data-readdy="true" class="block px-4 py-2 hover:bg-gray-100 text-secondary font-medium">Cloud Migration</a>
+<a href="https://readdy.ai/home/f3d1d9c3-3956-47bb-ab57-5d1d21ec1f08/923000be-0005-42d0-b88c-82588e0d528e" data-readdy="true" class="block px-4 py-2 hover:bg-gray-100">IaaS</a>
+<a href="#" class="block px-4 py-2 hover:bg-gray-100">PaaS</a>
+<a href="#" class="block px-4 py-2 hover:bg-gray-100">DevOps</a>
+<a href="#" class="block px-4 py-2 hover:bg-gray-100">AI Digital Marketing</a>
+<a href="#" class="block px-4 py-2 hover:bg-gray-100">AI Automation</a>
+<a href="#" class="block px-4 py-2 hover:bg-gray-100">Business Analytics</a>
+<a href="#" class="block px-4 py-2 hover:bg-gray-100">App Development</a>
+</div>
+</div>
+<div class="dropdown-trigger relative" id="industries-dropdown">
+<button type="button" class="text-gray-800 hover:text-secondary font-medium flex items-center">
+Industries
+<div class="w-4 h-4 flex items-center justify-center ml-1">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</button>
+<div class="dropdown hidden absolute top-full left-0 bg-white shadow-lg rounded w-48 py-2 z-50">
+<a href="#" class="block px-4 py-2 hover:bg-gray-100">Local Businesses</a>
+<a href="#" class="block px-4 py-2 hover:bg-gray-100">Startups</a>
+<a href="#" class="block px-4 py-2 hover:bg-gray-100">Construction</a>
+<a href="#" class="block px-4 py-2 hover:bg-gray-100">Logistics</a>
+<a href="#" class="block px-4 py-2 hover:bg-gray-100">E-commerce</a>
+</div>
+</div>
+<a href="#" class="text-gray-800 hover:text-secondary font-medium">About Us</a>
+<a href="#" class="text-gray-800 hover:text-secondary font-medium">Contact</a>
+</nav>
+<div>
+<a href="#contact-form" class="bg-[#DA5D5D] text-white px-6 py-2 !rounded-button font-medium hover:bg-opacity-90 transition whitespace-nowrap">Get a Quote</a>
+</div>
+<div class="md:hidden w-8 h-8 flex items-center justify-center">
+<i class="ri-menu-line text-xl"></i>
+</div>
+</div>
+</header>
+<!-- Breadcrumb -->
+<div class="bg-gray-50 pt-24">
+<div class="container mx-auto px-6 py-4">
+<div class="flex items-center text-sm">
+<a href="#" class="text-gray-600 hover:text-secondary">Home</a>
+<div class="w-4 h-4 flex items-center justify-center mx-1">
+<i class="ri-arrow-right-s-line text-gray-400"></i>
+</div>
+<a href="https://readdy.ai/home/f3d1d9c3-3956-47bb-ab57-5d1d21ec1f08/f0ac15cb-c832-426e-82c1-351b35ac03f9" data-readdy="true" class="text-gray-600 hover:text-secondary">Services</a>
+<div class="w-4 h-4 flex items-center justify-center mx-1">
+<i class="ri-arrow-right-s-line text-gray-400"></i>
+</div>
+<span class="text-secondary font-medium">Cloud Migration</span>
+</div>
+</div>
+</div>
+<!-- Hero Section -->
+<section class="relative overflow-hidden" style="background-image: url('https://readdy.ai/api/search-image?query=professional%2520cloud%2520migration%2520concept%2520with%2520servers%2520transforming%2520into%2520cloud%2520infrastructure%252C%2520data%2520flow%2520visualization%252C%2520blue%2520and%2520yellow%2520color%2520scheme%252C%2520gradient%2520background%252C%2520clean%2520design%252C%2520left%2520side%2520has%2520clean%2520white%2520space%2520for%2520text%2520that%2520blends%2520perfectly%2520with%2520the%2520image%2520background&width=1920&height=800&seq=10&orientation=landscape'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent"></div>
+<div class="container mx-auto px-6 py-20 md:py-28 relative">
+<div class="w-full flex flex-col md:flex-row items-center">
+<div class="w-full md:w-3/5 mb-10 md:mb-0">
+<div class="flex items-center mb-4">
+<a href="https://readdy.ai/home/f3d1d9c3-3956-47bb-ab57-5d1d21ec1f08/f0ac15cb-c832-426e-82c1-351b35ac03f9" data-readdy="true" class="inline-flex items-center text-secondary font-medium hover:underline">
+<div class="w-5 h-5 flex items-center justify-center mr-1">
+<i class="ri-arrow-left-line"></i>
+</div>
+Back to Services
+</a>
+</div>
+<h1 class="font-compose text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">Cloud Migration Services</h1>
+<p class="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl">Seamlessly transition your business to the cloud with our expert migration services. Minimize disruption, maximize security, and unlock the full potential of cloud technology.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="#contact-form" class="bg-primary text-secondary px-8 py-3 !rounded-button font-medium hover:bg-opacity-90 transition text-center whitespace-nowrap">Get Started</a>
+<a href="#migration-process" class="border-2 border-secondary text-secondary px-8 py-3 !rounded-button font-medium hover:bg-secondary hover:text-white transition text-center whitespace-nowrap">Learn More</a>
+</div>
+<div class="flex flex-wrap mt-10 gap-8">
+<div class="flex items-center">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/20 rounded-full mr-3">
+<i class="ri-shield-check-line text-secondary text-2xl"></i>
+</div>
+<div>
+<p class="font-bold text-gray-900">99.9%</p>
+<p class="text-sm text-gray-600">Uptime Guarantee</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/20 rounded-full mr-3">
+<i class="ri-customer-service-2-line text-secondary text-2xl"></i>
+</div>
+<div>
+<p class="font-bold text-gray-900">24/7</p>
+<p class="text-sm text-gray-600">Expert Support</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/20 rounded-full mr-3">
+<i class="ri-lock-line text-secondary text-2xl"></i>
+</div>
+<div>
+<p class="font-bold text-gray-900">ISO 27001</p>
+<p class="text-sm text-gray-600">Certified Security</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Overview -->
+<section id="service-overview" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="flex flex-col lg:flex-row items-start gap-12">
+<div class="w-full lg:w-1/2">
+<h2 class="font-compose text-3xl md:text-4xl font-bold text-gray-900 mb-6">Comprehensive Cloud Migration Services</h2>
+<p class="text-lg text-gray-700 mb-6">At Ubik 360, we provide end-to-end cloud migration services designed to help businesses of all sizes transition smoothly to the cloud. Our expert team handles every aspect of the migration process, from initial assessment and planning to implementation and post-migration support.</p>
+<p class="text-lg text-gray-700 mb-8">We understand that every business has unique needs, which is why we offer tailored migration strategies that align with your specific goals, timeline, and budget. Whether you're looking to migrate a single application or your entire infrastructure, we have the expertise to make it happen with minimal disruption to your operations.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1">
+<i class="ri-check-line text-secondary text-xl"></i>
+</div>
+<div>
+<h3 class="font-bold text-gray-900 mb-2">Minimal Downtime</h3>
+<p class="text-gray-700">Our migration strategies minimize disruption to your business operations.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1">
+<i class="ri-check-line text-secondary text-xl"></i>
+</div>
+<div>
+<h3 class="font-bold text-gray-900 mb-2">Data Security</h3>
+<p class="text-gray-700">Comprehensive security measures to protect your data during migration.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1">
+<i class="ri-check-line text-secondary text-xl"></i>
+</div>
+<div>
+<h3 class="font-bold text-gray-900 mb-2">Cost Optimization</h3>
+<p class="text-gray-700">Strategic planning to maximize ROI and minimize cloud spending.</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1">
+<i class="ri-check-line text-secondary text-xl"></i>
+</div>
+<div>
+<h3 class="font-bold text-gray-900 mb-2">Scalability</h3>
+<p class="text-gray-700">Future-proof solutions that grow with your business needs.</p>
+</div>
+</div>
+</div>
+<h3 class="font-compose text-xl font-bold text-gray-900 mb-4">Supported Cloud Platforms</h3>
+<div class="flex flex-wrap gap-6 mb-8">
+<div class="flex items-center bg-gray-50 px-4 py-3 rounded-lg">
+<div class="w-8 h-8 flex items-center justify-center mr-2">
+<i class="ri-amazon-fill text-xl"></i>
+</div>
+<span class="font-medium">AWS</span>
+</div>
+<div class="flex items-center bg-gray-50 px-4 py-3 rounded-lg">
+<div class="w-8 h-8 flex items-center justify-center mr-2">
+<i class="ri-microsoft-fill text-xl"></i>
+</div>
+<span class="font-medium">Azure</span>
+</div>
+<div class="flex items-center bg-gray-50 px-4 py-3 rounded-lg">
+<div class="w-8 h-8 flex items-center justify-center mr-2">
+<i class="ri-google-fill text-xl"></i>
+</div>
+<span class="font-medium">Google Cloud</span>
+</div>
+<div class="flex items-center bg-gray-50 px-4 py-3 rounded-lg">
+<div class="w-8 h-8 flex items-center justify-center mr-2">
+<i class="ri-cloud-fill text-xl"></i>
+</div>
+<span class="font-medium">IBM Cloud</span>
+</div>
+<div class="flex items-center bg-gray-50 px-4 py-3 rounded-lg">
+<div class="w-8 h-8 flex items-center justify-center mr-2">
+<i class="ri-database-2-fill text-xl"></i>
+</div>
+<span class="font-medium">Oracle Cloud</span>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2">
+<div class="bg-gray-50 rounded-lg p-8">
+<h3 class="font-compose text-2xl font-bold text-gray-900 mb-6">Cloud Migration Process</h3>
+<div class="relative h-[400px]" id="migration-process-chart"></div>
+<div class="mt-8">
+<h4 class="font-bold text-gray-900 mb-4">Technology Stack</h4>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+<div class="flex flex-col items-center bg-white p-3 rounded shadow-sm">
+<div class="w-10 h-10 flex items-center justify-center mb-2">
+<i class="ri-database-2-line text-secondary text-2xl"></i>
+</div>
+<span class="text-sm text-center">Databases</span>
+</div>
+<div class="flex flex-col items-center bg-white p-3 rounded shadow-sm">
+<div class="w-10 h-10 flex items-center justify-center mb-2">
+<i class="ri-server-line text-secondary text-2xl"></i>
+</div>
+<span class="text-sm text-center">Servers</span>
+</div>
+<div class="flex flex-col items-center bg-white p-3 rounded shadow-sm">
+<div class="w-10 h-10 flex items-center justify-center mb-2">
+<i class="ri-hard-drive-2-line text-secondary text-2xl"></i>
+</div>
+<span class="text-sm text-center">Storage</span>
+</div>
+<div class="flex flex-col items-center bg-white p-3 rounded shadow-sm">
+<div class="w-10 h-10 flex items-center justify-center mb-2">
+<i class="ri-code-box-line text-secondary text-2xl"></i>
+</div>
+<span class="text-sm text-center">Applications</span>
+</div>
+<div class="flex flex-col items-center bg-white p-3 rounded shadow-sm">
+<div class="w-10 h-10 flex items-center justify-center mb-2">
+<i class="ri-global-line text-secondary text-2xl"></i>
+</div>
+<span class="text-sm text-center">Networking</span>
+</div>
+<div class="flex flex-col items-center bg-white p-3 rounded shadow-sm">
+<div class="w-10 h-10 flex items-center justify-center mb-2">
+<i class="ri-shield-keyhole-line text-secondary text-2xl"></i>
+</div>
+<span class="text-sm text-center">Security</span>
+</div>
+<div class="flex flex-col items-center bg-white p-3 rounded shadow-sm">
+<div class="w-10 h-10 flex items-center justify-center mb-2">
+<i class="ri-terminal-box-line text-secondary text-2xl"></i>
+</div>
+<span class="text-sm text-center">DevOps</span>
+</div>
+<div class="flex flex-col items-center bg-white p-3 rounded shadow-sm">
+<div class="w-10 h-10 flex items-center justify-center mb-2">
+<i class="ri-file-cloud-line text-secondary text-2xl"></i>
+</div>
+<span class="text-sm text-center">Backup</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Benefits Section -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="font-compose text-3xl md:text-4xl font-bold text-gray-900 mb-4">Benefits of Cloud Migration</h2>
+<p class="text-lg text-gray-700 max-w-3xl mx-auto">Discover how migrating to the cloud can transform your business operations and drive growth.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Benefit Card 1 -->
+<div class="bg-white shadow-lg rounded-lg p-8 transition duration-300 hover:shadow-xl">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/20 rounded-full mb-6">
+<i class="ri-money-dollar-circle-line text-secondary text-3xl"></i>
+</div>
+<h3 class="font-compose text-xl font-bold text-gray-900 mb-3">Cost Efficiency</h3>
+<p class="text-gray-700">Reduce capital expenditure by eliminating the need for physical hardware and infrastructure maintenance. Pay only for the resources you use with flexible pricing models.</p>
+</div>
+<!-- Benefit Card 2 -->
+<div class="bg-white shadow-lg rounded-lg p-8 transition duration-300 hover:shadow-xl">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/20 rounded-full mb-6">
+<i class="ri-scales-3-line text-secondary text-3xl"></i>
+</div>
+<h3 class="font-compose text-xl font-bold text-gray-900 mb-3">Scalability</h3>
+<p class="text-gray-700">Easily scale your resources up or down based on demand, ensuring optimal performance during peak periods without overspending during quieter times.</p>
+</div>
+<!-- Benefit Card 3 -->
+<div class="bg-white shadow-lg rounded-lg p-8 transition duration-300 hover:shadow-xl">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/20 rounded-full mb-6">
+<i class="ri-shield-check-line text-secondary text-3xl"></i>
+</div>
+<h3 class="font-compose text-xl font-bold text-gray-900 mb-3">Enhanced Security</h3>
+<p class="text-gray-700">Benefit from enterprise-grade security measures, regular updates, and compliance certifications that would be costly to implement on-premises.</p>
+</div>
+<!-- Benefit Card 4 -->
+<div class="bg-white shadow-lg rounded-lg p-8 transition duration-300 hover:shadow-xl">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/20 rounded-full mb-6">
+<i class="ri-restart-line text-secondary text-3xl"></i>
+</div>
+<h3 class="font-compose text-xl font-bold text-gray-900 mb-3">Business Continuity</h3>
+<p class="text-gray-700">Implement robust disaster recovery solutions with automated backups and redundancy across multiple geographic locations to minimize downtime.</p>
+</div>
+<!-- Benefit Card 5 -->
+<div class="bg-white shadow-lg rounded-lg p-8 transition duration-300 hover:shadow-xl">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/20 rounded-full mb-6">
+<i class="ri-team-line text-secondary text-3xl"></i>
+</div>
+<h3 class="font-compose text-xl font-bold text-gray-900 mb-3">Improved Collaboration</h3>
+<p class="text-gray-700">Enable seamless collaboration with cloud-based tools that allow your team to work together from anywhere, boosting productivity and innovation.</p>
+</div>
+<!-- Benefit Card 6 -->
+<div class="bg-white shadow-lg rounded-lg p-8 transition duration-300 hover:shadow-xl">
+<div class="w-16 h-16 flex items-center justify-center bg-primary/20 rounded-full mb-6">
+<i class="ri-speed-up-line text-secondary text-3xl"></i>
+</div>
+<h3 class="font-compose text-xl font-bold text-gray-900 mb-3">Faster Time to Market</h3>
+<p class="text-gray-700">Accelerate development cycles and deployment with cloud-native tools and services, allowing you to respond quickly to market changes and opportunities.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Migration Process -->
+<section id="migration-process" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="font-compose text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Migration Process</h2>
+<p class="text-lg text-gray-700 max-w-3xl mx-auto">A structured, proven approach to ensure a smooth transition to the cloud with minimal disruption to your business.</p>
+</div>
+<div class="relative">
+<div class="space-y-12">
+<!-- Step 1 -->
+<div class="step-item relative flex">
+<div class="w-20 h-20 flex-shrink-0 flex items-center justify-center bg-primary rounded-full z-10 mr-6">
+<span class="text-2xl font-bold text-secondary">1</span>
+</div>
+<div class="bg-gray-50 rounded-lg p-6 flex-grow">
+<h3 class="font-compose text-xl font-bold text-gray-900 mb-3">Assessment & Discovery</h3>
+<p class="text-gray-700 mb-4">We begin by thoroughly analyzing your current infrastructure, applications, and data to understand your business needs and technical requirements.</p>
+<div class="flex flex-wrap gap-4 mb-4">
+<div class="bg-white px-3 py-1 rounded-full text-sm font-medium text-gray-700">Timeline: 1-2 weeks</div>
+<div class="bg-white px-3 py-1 rounded-full text-sm font-medium text-gray-700">Complexity: Low</div>
+</div>
+<h4 class="font-medium text-gray-900 mb-2">Key Deliverables:</h4>
+<ul class="list-disc pl-5 text-gray-700 space-y-1">
+<li>Comprehensive infrastructure inventory</li>
+<li>Application dependency mapping</li>
+<li>Performance baseline metrics</li>
+<li>Initial migration strategy recommendations</li>
+</ul>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="step-item relative flex">
+<div class="w-20 h-20 flex-shrink-0 flex items-center justify-center bg-primary rounded-full z-10 mr-6">
+<span class="text-2xl font-bold text-secondary">2</span>
+</div>
+<div class="bg-gray-50 rounded-lg p-6 flex-grow">
+<h3 class="font-compose text-xl font-bold text-gray-900 mb-3">Planning & Strategy</h3>
+<p class="text-gray-700 mb-4">Based on our assessment, we develop a detailed migration plan tailored to your specific needs, including architecture design, timeline, and risk mitigation strategies.</p>
+<div class="flex flex-wrap gap-4 mb-4">
+<div class="bg-white px-3 py-1 rounded-full text-sm font-medium text-gray-700">Timeline: 2-3 weeks</div>
+<div class="bg-white px-3 py-1 rounded-full text-sm font-medium text-gray-700">Complexity: Medium</div>
+</div>
+<h4 class="font-medium text-gray-900 mb-2">Key Deliverables:</h4>
+<ul class="list-disc pl-5 text-gray-700 space-y-1">
+<li>Detailed migration roadmap</li>
+<li>Cloud architecture design</li>
+<li>Resource allocation plan</li>
+<li>Risk assessment and mitigation strategies</li>
+<li>Cost optimization recommendations</li>
+</ul>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="step-item relative flex">
+<div class="w-20 h-20 flex-shrink-0 flex items-center justify-center bg-primary rounded-full z-10 mr-6">
+<span class="text-2xl font-bold text-secondary">3</span>
+</div>
+<div class="bg-gray-50 rounded-lg p-6 flex-grow">
+<h3 class="font-compose text-xl font-bold text-gray-900 mb-3">Proof of Concept</h3>
+<p class="text-gray-700 mb-4">We implement a small-scale migration to validate our approach, test connectivity, and identify any potential issues before proceeding with the full migration.</p>
+<div class="flex flex-wrap gap-4 mb-4">
+<div class="bg-white px-3 py-1 rounded-full text-sm font-medium text-gray-700">Timeline: 1-2 weeks</div>
+<div class="bg-white px-3 py-1 rounded-full text-sm font-medium text-gray-700">Complexity: Medium</div>
+</div>
+<h4 class="font-medium text-gray-900 mb-2">Key Deliverables:</h4>
+<ul class="list-disc pl-5 text-gray-700 space-y-1">
+<li>Functional test environment</li>
+<li>Performance testing results</li>
+<li>Security validation</li>
+<li>Refined migration approach based on findings</li>
+</ul>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="step-item relative flex">
+<div class="w-20 h-20 flex-shrink-0 flex items-center justify-center bg-primary rounded-full z-10 mr-6">
+<span class="text-2xl font-bold text-secondary">4</span>
+</div>
+<div class="bg-gray-50 rounded-lg p-6 flex-grow">
+<h3 class="font-compose text-xl font-bold text-gray-900 mb-3">Migration Execution</h3>
+<p class="text-gray-700 mb-4">We systematically migrate your applications, data, and infrastructure to the cloud according to the established plan, with careful monitoring and testing at each stage.</p>
+<div class="flex flex-wrap gap-4 mb-4">
+<div class="bg-white px-3 py-1 rounded-full text-sm font-medium text-gray-700">Timeline: 2-8 weeks</div>
+<div class="bg-white px-3 py-1 rounded-full text-sm font-medium text-gray-700">Complexity: High</div>
+</div>
+<h4 class="font-medium text-gray-900 mb-2">Key Deliverables:</h4>
+<ul class="list-disc pl-5 text-gray-700 space-y-1">
+<li>Migrated applications and data</li>
+<li>Continuous progress reporting</li>
+<li>Quality assurance testing</li>
+<li>Performance optimization</li>
+<li>Security implementation</li>
+</ul>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="step-item relative flex">
+<div class="w-20 h-20 flex-shrink-0 flex items-center justify-center bg-primary rounded-full z-10 mr-6">
+<span class="text-2xl font-bold text-secondary">5</span>
+</div>
+<div class="bg-gray-50 rounded-lg p-6 flex-grow">
+<h3 class="font-compose text-xl font-bold text-gray-900 mb-3">Validation & Cutover</h3>
+<p class="text-gray-700 mb-4">We thoroughly test the migrated environment to ensure everything is functioning correctly before transitioning your production workloads to the cloud.</p>
+<div class="flex flex-wrap gap-4 mb-4">
+<div class="bg-white px-3 py-1 rounded-full text-sm font-medium text-gray-700">Timeline: 1-2 weeks</div>
+<div class="bg-white px-3 py-1 rounded-full text-sm font-medium text-gray-700">Complexity: Medium</div>
+</div>
+<h4 class="font-medium text-gray-900 mb-2">Key Deliverables:</h4>
+<ul class="list-disc pl-5 text-gray-700 space-y-1">
+<li>Comprehensive validation testing</li>
+<li>User acceptance testing</li>
+<li>Performance benchmarking</li>
+<li>Cutover plan execution</li>
+<li>Go-live checklist completion</li>
+</ul>
+</div>
+</div>
+<!-- Step 6 -->
+<div class="step-item relative flex">
+<div class="w-20 h-20 flex-shrink-0 flex items-center justify-center bg-primary rounded-full z-10 mr-6">
+<span class="text-2xl font-bold text-secondary">6</span>
+</div>
+<div class="bg-gray-50 rounded-lg p-6 flex-grow">
+<h3 class="font-compose text-xl font-bold text-gray-900 mb-3">Optimization & Support</h3>
+<p class="text-gray-700 mb-4">After migration, we continue to monitor and optimize your cloud environment, providing ongoing support and recommendations for further improvements.</p>
+<div class="flex flex-wrap gap-4 mb-4">
+<div class="bg-white px-3 py-1 rounded-full text-sm font-medium text-gray-700">Timeline: Ongoing</div>
+<div class="bg-white px-3 py-1 rounded-full text-sm font-medium text-gray-700">Complexity: Low-Medium</div>
+</div>
+<h4 class="font-medium text-gray-900 mb-2">Key Deliverables:</h4>
+<ul class="list-disc pl-5 text-gray-700 space-y-1">
+<li>Performance monitoring and optimization</li>
+<li>Cost management recommendations</li>
+<li>Security posture reviews</li>
+<li>Regular status reports</li>
+<li>Continuous improvement suggestions</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Options -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="font-compose text-3xl md:text-4xl font-bold text-gray-900 mb-4">Flexible Pricing Options</h2>
+<p class="text-lg text-gray-700 max-w-3xl mx-auto">Choose the package that best fits your business needs and budget. All plans include our core migration services with different levels of support and features.</p>
+</div>
+<div class="flex flex-col lg:flex-row gap-8 justify-center">
+<!-- Pricing Card 1 -->
+<div class="pricing-card w-full lg:w-1/3 bg-white rounded-lg shadow-lg overflow-hidden transition duration-300">
+<div class="bg-gray-100 p-8 text-center">
+<h3 class="font-compose text-2xl font-bold text-gray-900 mb-2">Essentials</h3>
+<p class="text-gray-600 mb-6">For small businesses</p>
+<div class="flex justify-center items-baseline mb-4">
+<span class="text-4xl font-bold text-gray-900">$4,500</span>
+<span class="text-gray-600 ml-2">starting at</span>
+</div>
+</div>
+<div class="p-8">
+<ul class="space-y-4 mb-8">
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-secondary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Up to 5 applications migration</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-secondary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Basic cloud architecture design</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-secondary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Standard security implementation</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-secondary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Email and business hours support</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-secondary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">30 days post-migration support</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-gray-400 mr-2 mt-0.5">
+<i class="ri-close-line"></i>
+</div>
+<span class="text-gray-400">Advanced cost optimization</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-gray-400 mr-2 mt-0.5">
+<i class="ri-close-line"></i>
+</div>
+<span class="text-gray-400">Dedicated migration specialist</span>
+</li>
+</ul>
+<a href="#contact-form" class="block w-full bg-gray-200 text-gray-800 px-6 py-3 !rounded-button font-medium hover:bg-gray-300 transition text-center whitespace-nowrap">Get Started</a>
+</div>
+</div>
+<!-- Pricing Card 2 -->
+<div class="pricing-card w-full lg:w-1/3 bg-white rounded-lg shadow-xl overflow-hidden transition duration-300 transform lg:scale-105 z-10 border-2 border-primary">
+<div class="bg-primary p-8 text-center relative">
+<div class="absolute top-2 right-2 bg-secondary text-white text-xs font-bold px-3 py-1 rounded-full">Popular</div>
+<h3 class="font-compose text-2xl font-bold text-secondary mb-2">Business</h3>
+<p class="text-secondary/80 mb-6">For medium businesses</p>
+<div class="flex justify-center items-baseline mb-4">
+<span class="text-4xl font-bold text-secondary">$9,800</span>
+<span class="text-secondary/80 ml-2">starting at</span>
+</div>
+</div>
+<div class="p-8">
+<ul class="space-y-4 mb-8">
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-secondary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Up to 15 applications migration</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-secondary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Advanced cloud architecture design</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-secondary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Enhanced security implementation</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-secondary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Phone and extended hours support</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-secondary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">90 days post-migration support</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-secondary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Advanced cost optimization</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-gray-400 mr-2 mt-0.5">
+<i class="ri-close-line"></i>
+</div>
+<span class="text-gray-400">Dedicated migration specialist</span>
+</li>
+</ul>
+<a href="#contact-form" class="block w-full bg-[#DA5D5D] text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition text-center whitespace-nowrap">Get Started</a>
+</div>
+</div>
+<!-- Pricing Card 3 -->
+<div class="pricing-card w-full lg:w-1/3 bg-white rounded-lg shadow-lg overflow-hidden transition duration-300">
+<div class="bg-gray-100 p-8 text-center">
+<h3 class="font-compose text-2xl font-bold text-gray-900 mb-2">Enterprise</h3>
+<p class="text-gray-600 mb-6">For large organizations</p>
+<div class="flex justify-center items-baseline mb-4">
+<span class="text-4xl font-bold text-gray-900">$18,500</span>
+<span class="text-gray-600 ml-2">starting at</span>
+</div>
+</div>
+<div class="p-8">
+<ul class="space-y-4 mb-8">
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-secondary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Unlimited applications migration</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-secondary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Enterprise-grade architecture design</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-secondary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Comprehensive security implementation</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-secondary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">24/7 priority support</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-secondary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">12 months post-migration support</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-secondary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Advanced cost optimization</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 flex items-center justify-center text-secondary mr-2 mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700">Dedicated migration specialist</span>
+</li>
+</ul>
+<a href="#contact-form" class="block w-full bg-gray-200 text-gray-800 px-6 py-3 !rounded-button font-medium hover:bg-gray-300 transition text-center whitespace-nowrap">Get Started</a>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<p class="text-gray-700 mb-4">Need a custom solution? Contact us for a personalized quote.</p>
+<a href="#contact-form" class="inline-flex items-center text-secondary font-medium hover:underline">
+Request Custom Quote
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Case Studies -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="font-compose text-3xl md:text-4xl font-bold text-gray-900 mb-4">Success Stories</h2>
+<p class="text-lg text-gray-700 max-w-3xl mx-auto">See how our cloud migration services have helped businesses across Ontario transform their operations.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Case Study 1 -->
+<div class="case-study-card bg-white shadow-lg rounded-lg overflow-hidden transition duration-300">
+<div class="h-48 bg-gray-100 relative">
+<img src="https://readdy.ai/api/search-image?query=modern%2520retail%2520store%2520with%2520digital%2520technology%2520integration%252C%2520Ontario%2520Canada%252C%2520clean%2520professional%2520retail%2520environment%2520with%2520digital%2520displays&width=600&height=300&seq=11&orientation=landscape" alt="NorthStar Retail" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-compose text-xl font-bold text-gray-900">NorthStar Retail</h3>
+<span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-0.5 rounded">Retail</span>
+</div>
+<div class="mb-4">
+<h4 class="font-medium text-gray-900 mb-2">Challenge:</h4>
+<p class="text-gray-700 text-sm">Struggling with outdated on-premises systems that couldn't handle peak shopping seasons, resulting in slow performance and lost sales.</p>
+</div>
+<div class="mb-4">
+<h4 class="font-medium text-gray-900 mb-2">Solution:</h4>
+<p class="text-gray-700 text-sm">Migrated their entire retail management system to AWS, implementing auto-scaling and load balancing to handle traffic fluctuations.</p>
+</div>
+<div class="mb-6">
+<h4 class="font-medium text-gray-900 mb-2">Results:</h4>
+<ul class="list-disc pl-5 text-gray-700 text-sm space-y-1">
+<li>42% reduction in IT infrastructure costs</li>
+<li>99.99% uptime during Black Friday sales</li>
+<li>68% faster checkout process</li>
+<li>Seamless integration with e-commerce platform</li>
+</ul>
+</div>
+<a href="#" class="text-secondary font-medium hover:underline inline-flex items-center">
+Read Full Case Study
+<div class="w-4 h-4 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+<!-- Case Study 2 -->
+<div class="case-study-card bg-white shadow-lg rounded-lg overflow-hidden transition duration-300">
+<div class="h-48 bg-gray-100 relative">
+<img src="https://readdy.ai/api/search-image?query=modern%2520healthcare%2520facility%2520with%2520digital%2520technology%252C%2520medical%2520staff%2520using%2520tablets%2520and%2520digital%2520screens%252C%2520Ontario%2520Canada%252C%2520professional%2520healthcare%2520environment&width=600&height=300&seq=12&orientation=landscape" alt="MediCare Solutions" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-compose text-xl font-bold text-gray-900">MediCare Solutions</h3>
+<span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-0.5 rounded">Healthcare</span>
+</div>
+<div class="mb-4">
+<h4 class="font-medium text-gray-900 mb-2">Challenge:</h4>
+<p class="text-gray-700 text-sm">Needed to modernize their patient management system while ensuring HIPAA compliance and maintaining strict data security standards.</p>
+</div>
+<div class="mb-4">
+<h4 class="font-medium text-gray-900 mb-2">Solution:</h4>
+<p class="text-gray-700 text-sm">Implemented a phased migration to Azure with enhanced security controls, encryption, and compliance monitoring.</p>
+</div>
+<div class="mb-6">
+<h4 class="font-medium text-gray-900 mb-2">Results:</h4>
+<ul class="list-disc pl-5 text-gray-700 text-sm space-y-1">
+<li>Achieved HIPAA and PHIPA compliance</li>
+<li>Reduced data retrieval time by 78%</li>
+<li>Enhanced disaster recovery capabilities</li>
+<li>Improved patient data security</li>
+</ul>
+</div>
+<a href="#" class="text-secondary font-medium hover:underline inline-flex items-center">
+Read Full Case Study
+<div class="w-4 h-4 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+<!-- Case Study 3 -->
+<div class="case-study-card bg-white shadow-lg rounded-lg overflow-hidden transition duration-300">
+<div class="h-48 bg-gray-100 relative">
+<img src="https://readdy.ai/api/search-image?query=modern%2520manufacturing%2520facility%2520with%2520digital%2520technology%2520integration%252C%2520industrial%2520automation%252C%2520workers%2520using%2520tablets%2520to%2520monitor%2520equipment%252C%2520Ontario%2520Canada&width=600&height=300&seq=13&orientation=landscape" alt="TechFab Manufacturing" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-compose text-xl font-bold text-gray-900">TechFab Manufacturing</h3>
+<span class="bg-gray-100 text-gray-700 text-xs font-medium px-2.5 py-0.5 rounded">Manufacturing</span>
+</div>
+<div class="mb-4">
+<h4 class="font-medium text-gray-900 mb-2">Challenge:</h4>
+<p class="text-gray-700 text-sm">Legacy ERP system couldn't integrate with modern IoT sensors and was causing production delays and inventory management issues.</p>
+</div>
+<div class="mb-4">
+<h4 class="font-medium text-gray-900 mb-2">Solution:</h4>
+<p class="text-gray-700 text-sm">Migrated to Google Cloud Platform with a custom-built integration layer for IoT devices and real-time analytics dashboard.</p>
+</div>
+<div class="mb-6">
+<h4 class="font-medium text-gray-900 mb-2">Results:</h4>
+<ul class="list-disc pl-5 text-gray-700 text-sm space-y-1">
+<li>35% increase in production efficiency</li>
+<li>Real-time inventory tracking accuracy of 99.8%</li>
+<li>Predictive maintenance reduced downtime by 52%</li>
+<li>ROI achieved within 8 months</li>
+</ul>
+</div>
+<a href="#" class="text-secondary font-medium hover:underline inline-flex items-center">
+Read Full Case Study
+<div class="w-4 h-4 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<a href="#" class="inline-block bg-gray-100 hover:bg-gray-200 text-gray-800 px-6 py-3 !rounded-button font-medium transition whitespace-nowrap">View All Case Studies</a>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="font-compose text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+<p class="text-lg text-gray-700 max-w-3xl mx-auto">Find answers to common questions about our cloud migration services.</p>
+</div>
+<div class="max-w-4xl mx-auto">
+<div class="flex mb-8">
+<button class="faq-category-btn flex-1 py-3 px-6 text-center border-b-2 border-primary text-gray-900 font-medium">Technical</button>
+<button class="faq-category-btn flex-1 py-3 px-6 text-center border-b-2 border-gray-200 text-gray-500 font-medium">Business</button>
+<button class="faq-category-btn flex-1 py-3 px-6 text-center border-b-2 border-gray-200 text-gray-500 font-medium">Support</button>
+</div>
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<div class="faq-item bg-white rounded-lg shadow-sm">
+<button class="faq-toggle w-full flex items-center justify-between p-6 focus:outline-none">
+<h3 class="font-medium text-gray-900 text-left">How long does a typical cloud migration take?</h3>
+<div class="w-5 h-5 flex items-center justify-center text-gray-500 transition-transform">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</button>
+<div class="faq-answer px-6 pb-6 text-gray-700">
+<p>The timeline for cloud migration varies depending on the complexity and scale of your infrastructure. A small business with a few applications might take 4-6 weeks, while enterprise-level migrations can take 3-6 months or more. During our initial assessment, we'll provide you with a detailed timeline specific to your needs.</p>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="faq-item bg-white rounded-lg shadow-sm">
+<button class="faq-toggle w-full flex items-center justify-between p-6 focus:outline-none">
+<h3 class="font-medium text-gray-900 text-left">Will my business experience downtime during migration?</h3>
+<div class="w-5 h-5 flex items-center justify-center text-gray-500 transition-transform">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</button>
+<div class="faq-answer px-6 pb-6 text-gray-700">
+<p>We design our migration strategies to minimize downtime. In many cases, we can implement a parallel migration approach where your existing systems remain operational while we build and test the cloud environment. The final cutover typically requires only minimal downtime, often scheduled during off-hours to reduce business impact. For critical systems, we can implement high-availability solutions to ensure continuous operation.</p>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="faq-item bg-white rounded-lg shadow-sm">
+<button class="faq-toggle w-full flex items-center justify-between p-6 focus:outline-none">
+<h3 class="font-medium text-gray-900 text-left">How do you ensure data security during and after migration?</h3>
+<div class="w-5 h-5 flex items-center justify-center text-gray-500 transition-transform">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</button>
+<div class="faq-answer px-6 pb-6 text-gray-700">
+<p>Security is our top priority throughout the migration process. We implement multiple layers of protection, including data encryption in transit and at rest, secure VPN connections, access controls, and continuous monitoring. We follow industry best practices and compliance standards (HIPAA, PCI DSS, etc.) relevant to your business. After migration, we implement ongoing security measures such as vulnerability scanning, intrusion detection, and regular security audits to protect your cloud environment.</p>
+</div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="faq-item bg-white rounded-lg shadow-sm">
+<button class="faq-toggle w-full flex items-center justify-between p-6 focus:outline-none">
+<h3 class="font-medium text-gray-900 text-left">Can you migrate legacy applications to the cloud?</h3>
+<div class="w-5 h-5 flex items-center justify-center text-gray-500 transition-transform">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</button>
+<div class="faq-answer px-6 pb-6 text-gray-700">
+<p>Yes, we have extensive experience migrating legacy applications to the cloud. Depending on the application, we may recommend different approaches: rehosting (lift and shift), replatforming (making cloud-optimized adjustments), or in some cases, refactoring/rearchitecting for optimal cloud performance. During our assessment phase, we'll evaluate your legacy applications and recommend the most appropriate migration strategy for each one, considering factors like compatibility, performance requirements, and long-term maintenance.</p>
+</div>
+</div>
+<!-- FAQ Item 5 -->
+<div class="faq-item bg-white rounded-lg shadow-sm">
+<button class="faq-toggle w-full flex items-center justify-between p-6 focus:outline-none">
+<h3 class="font-medium text-gray-900 text-left">What happens if something goes wrong during migration?</h3>
+<div class="w-5 h-5 flex items-center justify-center text-gray-500 transition-transform">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</button>
+<div class="faq-answer px-6 pb-6 text-gray-700">
+<p>We implement comprehensive rollback plans for every migration to ensure business continuity. Before any major migration step, we create backups and establish recovery points. If an issue arises, we can quickly revert to the previous state while we resolve the problem. Our team monitors the migration process in real-time, allowing us to identify and address potential issues before they impact your operations. Additionally, we maintain your original environment until the migration is fully validated and stable.</p>
+</div>
+</div>
+</div>
+<div class="mt-8 text-center">
+<p class="text-gray-700 mb-4">Can't find the answer you're looking for?</p>
+<a href="#contact-form" class="inline-flex items-center text-secondary font-medium hover:underline">
+Contact Our Support Team
+<div class="w-5 h-5 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Form -->
+<section id="contact-form" class="py-20 bg-white">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="font-compose text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ready to Start Your Cloud Journey?</h2>
+<p class="text-lg text-gray-700 max-w-3xl mx-auto">Fill out the form below for a free consultation and migration assessment. Our experts will analyze your needs and provide a tailored solution.</p>
+</div>
+<div class="max-w-5xl mx-auto">
+<div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden">
+<div class="flex flex-col lg:flex-row">
+<div class="w-full lg:w-2/5 bg-[#625E12] p-8 text-white">
+<h3 class="font-compose text-2xl font-bold mb-6">Contact Information</h3>
+<p class="mb-8">Fill out the form and our team will get back to you within 24 hours.</p>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full mr-4">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<div>
+<p class="text-white/80 text-sm">Call Us</p>
+<p class="font-medium">(416) 555-7890</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full mr-4">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<div>
+<p class="text-white/80 text-sm">Email Us</p>
+<p class="font-medium">cloud@ubik360.com</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full mr-4">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<div>
+<p class="text-white/80 text-sm">Visit Us</p>
+<p class="font-medium">123 Tech Drive, Toronto, ON M5V 2K6</p>
+</div>
+</div>
+</div>
+<div class="mt-12">
+<p class="mb-4 text-white/80">Follow Us</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-primary hover:text-secondary transition">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-primary hover:text-secondary transition">
+<i class="ri-twitter-x-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 rounded-full hover:bg-primary hover:text-secondary transition">
+<i class="ri-facebook-fill"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-3/5 p-8">
+<form>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label for="first-name" class="block text-gray-700 font-medium mb-2">First Name*</label>
+<input type="text" id="first-name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary text-gray-800" required>
+</div>
+<div>
+<label for="last-name" class="block text-gray-700 font-medium mb-2">Last Name*</label>
+<input type="text" id="last-name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary text-gray-800" required>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label for="email" class="block text-gray-700 font-medium mb-2">Email Address*</label>
+<input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary text-gray-800" required>
+</div>
+<div>
+<label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number*</label>
+<input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary text-gray-800" required>
+</div>
+</div>
+<div class="mb-6">
+<label for="company" class="block text-gray-700 font-medium mb-2">Company Name*</label>
+<input type="text" id="company" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary text-gray-800" required>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label for="company-size" class="block text-gray-700 font-medium mb-2">Company Size</label>
+<div class="relative">
+<select id="company-size" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 appearance-none pr-8">
+<option value="" disabled selected>Select size</option>
+<option value="1-10">1-10 employees</option>
+<option value="11-50">11-50 employees</option>
+<option value="51-200">51-200 employees</option>
+<option value="201-500">201-500 employees</option>
+<option value="501+">501+ employees</option>
+</select>
+<div class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+<i class="ri-arrow-down-s-line text-gray-500"></i>
+</div>
+</div>
+</div>
+<div>
+<label for="timeline" class="block text-gray-700 font-medium mb-2">Expected Timeline</label>
+<div class="relative">
+<select id="timeline" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 appearance-none pr-8">
+<option value="" disabled selected>Select timeline</option>
+<option value="immediate">Immediate (1-2 months)</option>
+<option value="near-term">Near-term (3-6 months)</option>
+<option value="mid-term">Mid-term (6-12 months)</option>
+<option value="long-term">Long-term (12+ months)</option>
+</select>
+<div class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+<i class="ri-arrow-down-s-line text-gray-500"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="mb-6">
+<label class="block text-gray-700 font-medium mb-2">Current Infrastructure*</label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<label class="custom-checkbox">On-premises servers
+<input type="checkbox" name="infrastructure" value="on-premises">
+<span class="checkmark"></span>
+</label>
+<label class="custom-checkbox">Hybrid cloud
+<input type="checkbox" name="infrastructure" value="hybrid">
+<span class="checkmark"></span>
+</label>
+<label class="custom-checkbox">Partial cloud
+<input type="checkbox" name="infrastructure" value="partial">
+<span class="checkmark"></span>
+</label>
+<label class="custom-checkbox">Colocation facility
+<input type="checkbox" name="infrastructure" value="colocation">
+<span class="checkmark"></span>
+</label>
+</div>
+</div>
+<div class="mb-6">
+<label class="block text-gray-700 font-medium mb-2">Budget Range</label>
+<div class="relative">
+<select id="budget" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary text-gray-800 appearance-none pr-8">
+<option value="" disabled selected>Select budget range</option>
+<option value="under-5k">Under $5,000</option>
+<option value="5k-10k">$5,000 - $10,000</option>
+<option value="10k-25k">$10,000 - $25,000</option>
+<option value="25k-50k">$25,000 - $50,000</option>
+<option value="50k+">$50,000+</option>
+</select>
+<div class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+<i class="ri-arrow-down-s-line text-gray-500"></i>
+</div>
+</div>
+</div>
+<div class="mb-8">
+<label for="message" class="block text-gray-700 font-medium mb-2">Project Details</label>
+<textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary text-gray-800" placeholder="Please describe your migration goals and any specific requirements..."></textarea>
+</div>
+<button type="submit" class="w-full bg-[#DA5D5D] text-white px-6 py-3 !rounded-button font-medium hover:bg-opacity-90 transition whitespace-nowrap">Submit Request</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Related Services -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="font-compose text-3xl md:text-4xl font-bold text-gray-900 mb-4">Related Services</h2>
+<p class="text-lg text-gray-700 max-w-3xl mx-auto">Explore our complementary services to enhance your cloud experience.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Service Card 1 -->
+<div class="service-card bg-white shadow-lg rounded-lg p-6 transition duration-300 h-full">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-6">
+<i class="ri-server-line text-secondary text-2xl"></i>
+</div>
+<h3 class="font-compose text-xl font-bold text-gray-900 mb-3">IaaS</h3>
+<p class="text-gray-700 mb-4">Flexible infrastructure solutions that scale with your business needs, reducing capital expenses and improving reliability.</p>
+<a href="#" class="text-secondary font-medium hover:underline inline-flex items-center">
+Learn More
+<div class="w-4 h-4 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+<!-- Service Card 2 -->
+<div class="service-card bg-white shadow-lg rounded-lg p-6 transition duration-300 h-full">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-6">
+<i class="ri-code-box-line text-secondary text-2xl"></i>
+</div>
+<h3 class="font-compose text-xl font-bold text-gray-900 mb-3">PaaS</h3>
+<p class="text-gray-700 mb-4">Streamline application development and deployment with our comprehensive platform services.</p>
+<a href="#" class="text-secondary font-medium hover:underline inline-flex items-center">
+Learn More
+<div class="w-4 h-4 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+<!-- Service Card 3 -->
+<div class="service-card bg-white shadow-lg rounded-lg p-6 transition duration-300 h-full">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-full mb-6">
+<i class="ri-settings-line text-secondary text-2xl"></i>
+</div>
+<h3 class="font-compose text-xl font-bold text-gray-900 mb-3">DevOps</h3>
+<p class="text-gray-700 mb-4">Accelerate your software delivery with our integrated DevOps practices and tools.</p>
+<a href="#" class="text-secondary font-medium hover:underline inline-flex items-center">
+Learn More
+<div class="w-4 h-4 flex items-center justify-center ml-1">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+<div class="mt-12 text-center">
+<a href="https://readdy.ai/home/f3d1d9c3-3956-47bb-ab57-5d1d21ec1f08/f0ac15cb-c832-426e-82c1-351b35ac03f9" data-readdy="true" class="inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 py-3 !rounded-button font-medium transition whitespace-nowrap">View All Services</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+<!-- Company Info -->
+<div>
+<div class="h-8 mb-6">
+<img src="https://static.readdy.ai/image/f26820c46156987b718323285b022977/820a1203f3dafdd6a238d30d37806e0b.png" alt="Ubik360" class="h-full">
+</div>
+<p class="text-gray-400 mb-6">Affordable digital transformation solutions for businesses across Ontario.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary hover:text-secondary transition">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary hover:text-secondary transition">
+<i class="ri-twitter-x-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary hover:text-secondary transition">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-primary hover:text-secondary transition">
+<i class="ri-instagram-fill"></i>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div>
+<h3 class="text-xl font-bold mb-6">Services</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-primary transition">Cloud Migration</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition">IaaS & PaaS</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition">DevOps</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition">AI Solutions</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition">Business Analytics</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition">App Development</a></li>
+</ul>
+</div>
+<!-- Industries -->
+<div>
+<h3 class="text-xl font-bold mb-6">Industries</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-primary transition">Local Businesses</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition">Startups</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition">Construction</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition">Logistics</a></li>
+<li><a href="#" class="text-gray-400 hover:text-primary transition">E-commerce</a></li>
+</ul>
+</div>
+<!-- Contact & Newsletter -->
+<div>
+<h3 class="text-xl font-bold mb-6">Contact Us</h3>
+<ul class="space-y-3 mb-6">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mr-3 mt-1">
+<i class="ri-map-pin-line"></i>
+</div>
+<span class="text-gray-400">123 Tech Drive, Toronto, ON M5V 2K6</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mr-3 mt-1">
+<i class="ri-phone-line"></i>
+</div>
+<span class="text-gray-400">(416) 555-7890</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mr-3 mt-1">
+<i class="ri-mail-line"></i>
+</div>
+<span class="text-gray-400">info@ubik360.com</span>
+</li>
+</ul>
+<h3 class="text-xl font-bold mb-4">Newsletter</h3>
+<form class="flex">
+<input type="email" placeholder="Your email" class="flex-grow px-4 py-2 bg-gray-800 border-none rounded-l focus:outline-none focus:ring-2 focus:ring-primary text-white">
+<button type="submit" class="bg-primary text-secondary px-4 py-2 !rounded-r-button font-medium hover:bg-opacity-90 transition whitespace-nowrap">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="pt-8 border-t border-gray-800 text-center">
+<div class="flex justify-center space-x-6 mb-6">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-visa-fill text-2xl text-gray-400"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-mastercard-fill text-2xl text-gray-400"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-paypal-fill text-2xl text-gray-400"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-apple-fill text-2xl text-gray-400"></i>
+</div>
+</div>
+<p class="text-gray-500 text-sm">© 2025 Ubik 360 Enterprises. All rights reserved.</p>
+<div class="flex justify-center space-x-4 mt-4 text-sm text-gray-500">
+<a href="#" class="hover:text-primary transition">Privacy Policy</a>
+<span>|</span>
+<a href="#" class="hover:text-primary transition">Terms of Service</a>
+<span>|</span>
+<a href="#" class="hover:text-primary transition">Sitemap</a>
+</div>
+</div>
+</div>
+</footer>
+<script id="navbarScript">
+document.addEventListener('DOMContentLoaded', function() {
+const header = document.querySelector('header');
+window.addEventListener('scroll', function() {
+if (window.scrollY > 50) {
+header.classList.add('shadow-md');
+} else {
+header.classList.remove('shadow-md');
+}
+});
+const industriesDropdown = document.getElementById('industries-dropdown');
+const dropdownButton = industriesDropdown.querySelector('button');
+const dropdownMenu = industriesDropdown.querySelector('.dropdown');
+dropdownButton.addEventListener('click', function(e) {
+e.stopPropagation();
+dropdownMenu.classList.toggle('hidden');
+});
+document.addEventListener('click', function(e) {
+if (!industriesDropdown.contains(e.target)) {
+dropdownMenu.classList.add('hidden');
+}
+});
+dropdownMenu.addEventListener('click', function() {
+dropdownMenu.classList.add('hidden');
+});
+});
+</script>
+<script id="smoothScrollScript">
+document.addEventListener('DOMContentLoaded', function() {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+window.scrollTo({
+top: targetElement.offsetTop - 80,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+<script id="serviceCardScript">
+document.addEventListener('DOMContentLoaded', function() {
+const serviceCards = document.querySelectorAll('.service-card');
+serviceCards.forEach(card => {
+card.addEventListener('mouseenter', function() {
+this.classList.add('shadow-xl');
+});
+card.addEventListener('mouseleave', function() {
+this.classList.remove('shadow-xl');
+});
+});
+});
+</script>
+<script id="faqToggleScript">
+document.addEventListener('DOMContentLoaded', function() {
+const faqToggles = document.querySelectorAll('.faq-toggle');
+faqToggles.forEach(toggle => {
+toggle.addEventListener('click', function() {
+const faqItem = this.closest('.faq-item');
+if (faqItem.classList.contains('active')) {
+faqItem.classList.remove('active');
+} else {
+document.querySelectorAll('.faq-item').forEach(item => {
+item.classList.remove('active');
+});
+faqItem.classList.add('active');
+}
+});
+});
+// Open the first FAQ item by default
+if (faqToggles.length > 0) {
+faqToggles[0].click();
+}
+});
+</script>
+<script id="faqCategoryScript">
+document.addEventListener('DOMContentLoaded', function() {
+const categoryButtons = document.querySelectorAll('.faq-category-btn');
+categoryButtons.forEach(button => {
+button.addEventListener('click', function() {
+categoryButtons.forEach(btn => {
+btn.classList.remove('border-primary', 'text-gray-900');
+btn.classList.add('border-gray-200', 'text-gray-500');
+});
+this.classList.remove('border-gray-200', 'text-gray-500');
+this.classList.add('border-primary', 'text-gray-900');
+});
+});
+});
+</script>
+<script id="formValidationScript">
+document.addEventListener('DOMContentLoaded', function() {
+const contactForm = document.querySelector('#contact-form form');
+if (contactForm) {
+contactForm.addEventListener('submit', function(e) {
+e.preventDefault();
+let isValid = true;
+const requiredFields = contactForm.querySelectorAll('[required]');
+requiredFields.forEach(field => {
+if (!field.value.trim()) {
+isValid = false;
+field.classList.add('border-red-500');
+} else {
+field.classList.remove('border-red-500');
+}
+});
+const email = contactForm.querySelector('input[type="email"]');
+if (email && email.value.trim() && !email.value.includes('@')) {
+isValid = false;
+email.classList.add('border-red-500');
+}
+if (isValid) {
+// Form submission logic would go here
+alert('Thank you for your interest in our cloud migration services! We will contact you shortly to discuss your project.');
+contactForm.reset();
+}
+});
+}
+});
+</script>
+<script id="migrationProcessChartScript">
+document.addEventListener('DOMContentLoaded', function() {
+const chartContainer = document.getElementById('migration-process-chart');
+if (chartContainer) {
+const chart = echarts.init(chartContainer);
+const option = {
+animation: false,
+tooltip: {
+trigger: 'item',
+backgroundColor: 'rgba(255, 255, 255, 0.8)',
+borderColor: '#F6EC2F',
+borderWidth: 1,
+textStyle: {
+color: '#1f2937'
+}
+},
+color: ['rgba(87, 181, 231, 1)', 'rgba(141, 211, 199, 1)', 'rgba(251, 191, 114, 1)', 'rgba(252, 141, 98, 1)'],
+series: [
+{
+name: 'Migration Process',
+type: 'pie',
+radius: ['40%', '70%'],
+avoidLabelOverlap: false,
+itemStyle: {
+borderRadius: 8,
+borderColor: '#fff',
+borderWidth: 2
+},
+label: {
+show: true,
+position: 'outside',
+formatter: '{b}: {c}%',
+color: '#1f2937'
+},
+emphasis: {
+label: {
+show: true,
+fontSize: '14',
+fontWeight: 'bold'
+}
+},
+labelLine: {
+show: true
+},
+data: [
+{ value: 20, name: 'Assessment' },
+{ value: 25, name: 'Planning' },
+{ value: 40, name: 'Execution' },
+{ value: 15, name: 'Optimization' }
+]
+}
+]
+};
+chart.setOption(option);
+window.addEventListener('resize', function() {
+chart.resize();
+});
+}
+});
+</script>
+</body>
+</html>
